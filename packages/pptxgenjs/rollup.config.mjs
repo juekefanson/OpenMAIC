@@ -28,6 +28,7 @@ export default {
 		typescript({
 			typescript: ts,
 			include: [/\.tsx?$/],
+			cache: false, // disable rolling cache to avoid genie-trash timeout in sandboxed envs
 		}),
 		commonjs(),
 	]
